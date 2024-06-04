@@ -1,5 +1,6 @@
 <script setup>
 import Video from "./components/video/video.vue";
+import Category from "./components/category/Category.vue";
 
 
 </script>
@@ -14,6 +15,10 @@ import Video from "./components/video/video.vue";
 
     <div>
         <Video />
+    </div>
+
+    <div>
+      <Category/>
     </div>
     
      
@@ -39,6 +44,10 @@ import Video from "./components/video/video.vue";
     text-align: center;
     
   }
+
+
+  
+
 
   body {
     background-color: #BA9470;

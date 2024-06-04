@@ -6,17 +6,18 @@
 
 <template>
     <div class="video-container">
-        <Video id="app"controls autoplay muted loop>
-            <source src="https://videos.pexels.com/video-files/2909914/2909914-hd_1366_720_24fps.mp4" controls="controls" >
+        <Video id="app" autoplay muted loop>
+            <source src="https://videos.pexels.com/video-files/2909914/2909914-hd_1366_720_24fps.mp4">
         </Video>
     </div>
 </template>
 
 <style scoped>
 video {
-  width: 100%;
-  height: auto;
-  align-items: center;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    align-items: center;
   
 }
 </style>
