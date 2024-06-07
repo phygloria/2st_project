@@ -1,43 +1,55 @@
 <script setup>
+// import { ref, onMounted } from 'vue';
 import Video from "./components/video/video.vue";
 import Category from "./components/category/Category.vue";
-
-
+import MenuList from "./components/menu/01_MenuList.vue";
 </script>
 
-<template>  
-    <hearder>
+<template>
+  <div class="body">
+    <header>
       <div>
         <h1 class="custom-font"> Cafe.js </h1>
       </div> 
 
-    </hearder>
+    </header>
 
     <div>
-        <Video />
+        <Video/>
     </div>
-
     <div>
       <Category/>
     </div>
-    
-     
-  
+    <div>
+      <MenuList/>
+    </div>
+  </div>
 </template>
 
-<style scoped>
 
+<style>
+.header {
+  text-align: center;
+}
+.video {
+  width: 50%;
+  height: 150%;
+}
+.category {
+  height: 50px;
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+}
 
-
-  @font-face{
+@font-face{
     font-family:'DNFBitBitv2';
     font-style: normal; 
     font-weight:400; 
     src:url('//cdn.df.nexon.com/img/common/font/DNFBitBitv2.otf')format('opentype')
   }
 
-
-  .custom-font{
+.custom-font{
     font-family: 'DNFBitBitv2', sans-serif;
     color: #FFB834;
     text-shadow: 4px 4px 0 #783E19; /* X, Y, blur-radius, color */   
@@ -45,10 +57,7 @@ import Category from "./components/category/Category.vue";
     
   }
 
-
-
-
-  body {
+ body {
     background-color: #BA9470;
   }
 
